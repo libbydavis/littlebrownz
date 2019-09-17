@@ -4,18 +4,32 @@
 	<title>LittleBrownz</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque%7CMontserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
 	</head>
 	<body>
 		<div class="sidebar">
 			<nav class="sidenav">
 				<ul>
-					<a href="#about"><li>About</li></a>
-					<a href="#gallery"><li>Gallery</li></a>
-					<a href="#contact"><li>Contact</li></a>
-					<a href="#tips"><li>Tips</li></a>
+					<li class="aboutbutton hovermenu">About</li>
+					<li class="gallerybutton hovermenu">Gallery</li>
+					<li class="contactbutton hovermenu">Contact</li>
+					<li class="tipsbutton hovermenu">Tips</li>
+				</ul>
+			</nav>
+			<nav id="fullpagenav">
+				<ul onclick="hideMenu()">
+					<li class="aboutbutton hovermenu">About</li>
+					<li class="gallerybutton hovermenu">Gallery</li>
+					<li class="contactbutton hovermenu">Contact</li>
+					<li class="tipsbutton hovermenu">Tips</li>
 				</ul>
 			</nav>
 			<a href="#about"><img src="kylelogoweb.png" class="logo"></a>
+			<img src="openiconkyle.svg" id="iconopen" onclick="menuButton()">
+			<img src="closeiconkyle.svg" id="iconclose" onclick="menuButton()">
 		</div>
 		<div id="about">
 			<h2 class="aboutheading">Hello!</h2>
@@ -24,10 +38,10 @@
 			<img src="kygraphic.png" class="backlogo">
 		</div>
 		<div id="gallery">
-			<h2 class="gallerytitle">Gallery</h2>
-			<img src="nic2.jpg" class="gallery1">
-			<img src="nic1.jpg" class="gallery2">
-			<img src="nic3.jpg" class="gallery3">
+			<a href="gallery.html"><h2 class="gallerytitle">Gallery</h2></a>
+			<img id="gallery1" src="nic2.jpg">
+			<img id="gallery2" src="nic1.jpg">
+			<img id="gallery3" src="nic3.jpg">
 		</div>
 		<div id="contact"></div>
 		<div id="tips"></div>
