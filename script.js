@@ -1,50 +1,39 @@
+//adding fixed style to menu so that it can appear to fill the page
 function menuButton() {
   var x = document.getElementById("fullpagenav");
  if (x.style.display === "none" || x.style.display === "") {
     x.style.position = "fixed";
+  }
 
-  }
-  var y = document.getElementById("iconclose");
-  if (y.style.display === "none" || y.style.display === "") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
-  var z = document.getElementById("iconopen");
-  if (z.style.display === "block" || z.style.display === "") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "block";
-  }
 }
-function hideMenu() {
-	 var x = document.getElementById("fullpagenav");
- if (x.style.display === "block") {
-    x.style.display = "none";
-  }
-   var y = document.getElementById("iconclose");
-  if (y.style.display === "none" || y.style.display === "") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
-  var z = document.getElementById("iconopen");
-  if (z.style.display === "block" || z.style.display === "") {
-    z.style.display = "none";
-  } else {
-    z.style.display = "block";
-  }
-}
+
+
+//showing and hiding the hamburger icon
+$(document).ready(function(){
+	$("#iconopen").click(function(){
+		$(this).hide();
+		$("#iconclose").show();
+	});
+	$("#iconclose").add("#fullpagenav").on('click', function(){
+		$("#iconclose").hide();
+		$("#iconopen").show();
+	});
+});
+
+
+//showing and hiding the hamburger menu content
 $(document).ready(function(){
 	$("#iconopen").click(function(){
 		$("#fullpagenav").fadeIn();
 	});
-	$("#iconclose").click(function(){
+	$("#iconclose").add("#fullpagenav").on('click', function(){
 		$("#fullpagenav").fadeOut();
 	});
 });
+
+//adding a scroll to animation
 $(document).ready(function(){
-	$(".aboutbutton").click(function(){
+	$(".aboutbutton").add("#logo").on('click', function(){
 		$("html, body").animate({
 			scrollTop: $("#about").offset().top
 		}, 1000);
@@ -67,14 +56,22 @@ $(document).ready(function(){
 });
 
 
-var imageGallery1 = ["mackenzie1.jpg", "mackenzie2.jpg", "nic2.jpg"];
-setInterval("changeImage()", 3000);
+var imageGallery1 = ["mackenzie1.jpg", "balletgirl2.jpg", "nic2.jpg"];
+var imageGallery2 = ["mackenzie3.jpg", "balletgirl1.jpg", "nic1.jpg"];
+var imageGallery3 = ["mackenzie2.jpg", "balletgirl3.jpg", "nic3.jpg"];
+setInterval("changeImage()", 3500);
 var x = 0
 
 function changeImage() {
 	document.getElementById("gallery1").src= imageGallery1[x];
+	document.getElementById("gallery2").src= imageGallery2[x];
+	document.getElementById("gallery3").src= imageGallery3[x];
 	x++;
 	if (x === (imageGallery1.length)) {
 		x = 0;
 	}
+}
+
+function submitButton() {
+	alert("Thanks for contacting me! I'll get back to you soon :)")
 }
