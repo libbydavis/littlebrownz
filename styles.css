@@ -5,7 +5,7 @@ body {
 }
 
 /* Side Nav Bar */
-.logo {
+#logo {
 	width: 12em;
 	margin-left: 7em;
 	position: fixed;
@@ -85,10 +85,10 @@ body {
 .aboutbio {
 	position: absolute;
 	z-index: 1;
-	top: 70%;
+	top: 65%;
 	right: 40%;
 	font-size: 1.3em;
-	max-width: 20%;
+	max-width: 28%;
 }
 .aboutpicture {
 	width: 40%;
@@ -105,22 +105,25 @@ body {
 	z-index: -2;
 	width: 50%;
 }
+
+/* Gallery Section */
 #gallery {
 	position: absolute;
 	top: 150%;
 	text-align: center;
+	margin-left: 10%;
 
 }
 #gallery1 {
 	width: 31%;
 	position: relative;
-	left: 15%;
+	left: 10%;
 	z-index: -5;
 }
 #gallery2 {
 	width: 23%;
 	position: relative;
-	left: 10%;
+	left: 5%;
 	top: 3em;
 	z-index: 1;
 
@@ -133,7 +136,7 @@ body {
 .gallerytitle {
 	position: absolute;
 	top: 60%;
-	left: 18%;
+	left: 10%;
 	font-size: 7em;
 	z-index: 2;
 }
@@ -141,6 +144,109 @@ body {
 	color: white;
 }
 
+/*Contact Section */
+#contact {
+	position: absolute;
+	top: 300%;
+	left: 20%;
+}
+#contact form fieldset {
+	border: none;
+}
+::-webkit-input-placeholder {
+	color: #adadad;
+}
+:-ms-input-placeholder {
+	color: #adadad;
+}
+#contact form fieldset input {
+	background-color: transparent;
+	border: none;
+	border-bottom: solid #adadad;
+	color: #adadad;
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 3.2em;
+	padding-right: 2.5em;
+	
+}
+#contact form fieldset input, #contact form fieldset select, #contact form fieldset button{
+	margin: 5%;
+	margin-left: 18%;
+}
+#contact form fieldset button {
+	font-family: 'Darker Grotesque', sans-serif;
+	font-size: 2.3em;
+	border: solid #adadad;;
+	background-color: transparent;
+	color: #adadad;
+	padding: 0.2em;
+	margin-left: 55%;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 0.4em;
+	margin-top: 10%;
+}
+#contact form fieldset button:hover {
+	cursor: pointer;
+}
+.email {
+	font-size: 2.8em;
+	color: #adadad;
+	margin-left: 24%;
+}
+.maillink{
+	color: #adadad;
+}
+.socialicon {
+	width: 15%;
+	position: absolute;
+	z-index: 5;
+	right: -40%;
+}
+.socialicon.ig {
+	top: 8%;
+}
+.socialicon.fb {
+	top: 34%;
+}
+.socialicon.tw {
+	top: 62%;
+}
+
+/*Tips Section */
+#tips {
+	position: absolute;
+	top: 440%;
+	text-align: center;
+	left: 35%;
+
+}
+.tipstitle {
+	font-size: 7em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.questionicon {
+	position: absolute;
+	z-index: -1;
+	font-size: 40em;
+	line-height: 0.5em;
+	margin-top: 0;
+	margin-bottom: 50%;
+	color: #5a5a5a;
+	top: -5%;
+	left: 60%;
+}
+.arrow {
+	position: absolute;
+	width: 15%;
+	left: 8%;
+	top: 85%;
+}
+.arrow:hover {
+	-webkit-transition: 0.5s ease-in-out;
+	-webkit-transform: translate(2em, 0);
+}
 
 @media only screen and (max-width: 1000px){
 	#iconopen {
@@ -149,7 +255,7 @@ body {
 	.sidenav {
 		display: none;
 	}
-	.logo {
+	#logo {
 	margin-left: 1em;
 	}
 	.backlogo {
