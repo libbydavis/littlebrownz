@@ -20,20 +20,21 @@
 				</ul>
 			</nav>
 			<nav id="fullpagenav">
-				<ul onclick="hideMenu()">
+				<ul>
 					<li class="aboutbutton hovermenu">About</li>
 					<li class="gallerybutton hovermenu">Gallery</li>
 					<li class="contactbutton hovermenu">Contact</li>
 					<li class="tipsbutton hovermenu">Tips</li>
 				</ul>
 			</nav>
-			<a href="#about"><img src="kylelogoweb.png" class="logo"></a>
+			<a href="#about"><img src="kylelogoweb.png" id="logo"></a>
 			<img src="openiconkyle.svg" id="iconopen" onclick="menuButton()">
 			<img src="closeiconkyle.svg" id="iconclose" onclick="menuButton()">
 		</div>
 		<div id="about">
 			<h2 class="aboutheading">Hello!</h2>
-			<p class="aboutbio">Here is some text about the photographer Kyle</p>
+			<p class="aboutbio">I am a young man who enjoys taking pictures of things that inspires me. I do photography as a hobby and hopefully in the future be my full-time job. <br>
+			I was born in the Philippines but currently living here in New Zealand. Things I love to do are playing sports, singing, and just being outdoors with my camera.</p>
 			<img src="kylebw.jpg" class="aboutpicture">
 			<img src="kygraphic.png" class="backlogo">
 		</div>
@@ -43,7 +44,29 @@
 			<img id="gallery2" src="nic1.jpg">
 			<img id="gallery3" src="nic3.jpg">
 		</div>
-		<div id="contact"></div>
-		<div id="tips"></div>
+		<div id="contact">
+			<form action="get.php">
+				<fieldset>
+					<input type="text" placeholder="name"> <br>
+					<input type="email" placeholder="email"> <br>
+					<select>
+						<option value="book">Book Photographer</option>
+						<option value="buyphotos">Buy Photos</option>
+						<option value="askaboutwork">Question About My Work</option>
+					</select> <br>
+					<input type="text" placeholder="message"> <br>
+					<button onclick="submitButton()" type="submit">Submit</button>
+				</fieldset>
+			</form>
+			<a href="https://www.instagram.com/littlebrownzofficial/" target="_blank"><img src="iggreylogo.png" class="socialicon ig"></a>
+			<a href="https://www.facebook.com/kfyu1018" target="_blank"><img src="facebookgreylogo.png" class="socialicon fb"></a>
+			<a href="https://twitter.com/" target="_blank"><img src="twittergreylogo.png" class="socialicon tw"></a>
+			<a href="mailto:131666@cloud.rangitoto.school.nz?Subject=Inquiry" class="maillink"><h3 class="email">131666@cloud.rangitoto.school.nz</h3></a>
+		</div>
+		<div id="tips">
+			<h1 class="questionicon">?</h1>
+			<h2 class="tipstitle">Need Tips</h2>
+			<a href="gallery.html"><img src="arrowicon.svg" class="arrow"></a>
+		</div>
 	</body>
 </html>
