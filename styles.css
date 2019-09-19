@@ -2,6 +2,7 @@ body {
 	background-color: black;
 	color: white;
 	font-family: 'Darker Grotesque', sans-serif;
+	max-width: 100%;
 }
 
 /* Side Nav Bar */
@@ -51,7 +52,7 @@ body {
 #fullpagenav {
 	display: none;
 	width: 100%;
-	z-index: 3;
+	z-index: 4;
 	background-color: black;
 	text-align: center;
 	font-size: 4em;
@@ -112,7 +113,6 @@ body {
 	top: 150%;
 	text-align: center;
 	margin-left: 10%;
-
 }
 #gallery1 {
 	width: 31%;
@@ -138,7 +138,7 @@ body {
 	top: 60%;
 	left: 10%;
 	font-size: 7em;
-	z-index: 2;
+	z-index: 3;
 }
 #gallery a {
 	color: white;
@@ -248,6 +248,79 @@ body {
 	-webkit-transform: translate(2em, 0);
 }
 
+/* Gallery Page */
+
+#logogallery {
+	width: 12em;
+	margin-left: 4em;
+	position: absolute;
+	top: 4%;
+	z-index: 4;
+}
+.gallerythird {
+	text-align: center;
+	margin-top: 10%;
+}
+.galpo1, .galpo2, .galpo3, .galpo4, .galpo5, .galpo6 {
+	display: inline-block;
+}
+.galpo1 {
+	width: 32%;
+}
+.galpo2 {
+	width: 25%;
+	margin-left: -6%;
+	z-index: 1;
+}
+.galpo3 {
+	width: 40%;
+	margin-left: -9%;
+	position: relative;
+	z-index: -1;
+}
+.galpo4 {
+	width: 38%;
+}
+.galpo5 {
+	width: 25%;
+	margin-left: -10%;
+	z-index: 1;
+}
+.galpo6 {
+	width: 34%;
+	margin-left: -7%;
+	position: relative;
+	z-index: -1;
+}
+.landscape {
+	margin-top: 10%;
+}
+.landscapecontainer {
+	width: 100%;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.socialicon.ig, .socialicon.fb {
+	top: 110%;
+	}
+	.socialicon.tw {
+		top: 111%;
+	}
+	.socialicon.ig {
+		left: 20%;
+	}
+	.socialicon.fb {
+		left: 57%;
+	}
+	.socialicon.tw {
+		left: 95%;
+	}
+	#tips {
+		top: 500%;
+	}
+}
 @media only screen and (max-width: 1000px){
 	#iconopen {
 		display: block;
@@ -276,16 +349,78 @@ body {
 		top: 25%;
 	}
 	#gallery {
-		top: 90%;
+		top: 105%;
+		margin-left: -8%;
 	}
 	#gallery1 {
-	left: 8%;
-	}
-	#gallery2 {
-		left: 5%;
+	width: 45%;
+	z-index: 1;
 
 	}
+	#gallery2 {
+		left: 4%;
+		width: 32%;
+		z-index: 2;
+	}
 	#gallery3 {
-		right: 8%;
+		display: none;
+	}
+	.gallerytitle {
+	position: absolute;
+	top: 50%;
+	right: -25%;
+	font-size: 7em;
+	}
+	#contact {
+		top: 200%;
+	}
+	#tips {
+		top: 350%;
+		left: 30%;
+	}
+	#contact form fieldset input {
+	font-size: 3.2em;
+	padding-right: 0em;
+	
+	}
+	#contact form fieldset button {
+		margin-left: 45%;
+	}
+	.email {
+		font-size: 2.2em;
+		margin-left: 20%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.aboutheading {
+		top: 30%;
+		right: 48%;
+		z-index: 1;
+		font-weight: bold;
+		font-size: 5em;
+		line-height: 2em;
+	}
+	.aboutbio {
+		position: absolute;
+		z-index: 1;
+		top: 65%;
+		right: 40%;
+		font-size: 1.3em;
+		max-width: 28%;
+	}
+	.aboutpicture {
+		width: 60%;
+		position: absolute;
+		z-index: -1;
+		right: 10%;
+		top: 20%;
+
+	}
+	.backlogo {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -2;
+		width: 60%;
 	}
 }
