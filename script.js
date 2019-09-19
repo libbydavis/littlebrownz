@@ -59,7 +59,7 @@ $(document).ready(function(){
 var imageGallery1 = ["mackenzie1.jpg", "balletgirl2.jpg", "nic2.jpg"];
 var imageGallery2 = ["mackenzie3.jpg", "balletgirl1.jpg", "nic1.jpg"];
 var imageGallery3 = ["mackenzie2.jpg", "balletgirl3.jpg", "nic3.jpg"];
-setInterval("changeImage()", 3500);
+//setInterval("changeImage()", 3500);
 var x = 0
 
 function changeImage() {
