@@ -13,10 +13,10 @@
 		<div class="sidebar">
 			<nav class="sidenav">
 				<ul>
-					<li class="aboutbutton hovermenu">About</li>
-					<li class="gallerybutton hovermenu">Gallery</li>
-					<li class="contactbutton hovermenu">Contact</li>
 					<li class="tipsbutton hovermenu">Tips</li>
+					<li class="contactbutton hovermenu">Contact</li>
+					<li class="gallerybutton hovermenu">Gallery</li>
+					<li class="aboutbutton hovermenu">About</li>
 				</ul>
 			</nav>
 			<nav id="fullpagenav">
@@ -45,17 +45,17 @@
 			<img id="gallery3" src="nic3.jpg">
 		</div>
 		<div id="contact">
-			<form action="get.php">
+			<form method="post" action="get.php">
 				<fieldset>
-					<input type="text" placeholder="name"> <br>
-					<input type="email" placeholder="email"> <br>
+					<input type="text" placeholder="name" name="name"> <br>
+					<input type="email" placeholder="email" name="email"> <br>
 					<select>
 						<option value="book">Book Photographer</option>
 						<option value="buyphotos">Buy Photos</option>
 						<option value="askaboutwork">Question About My Work</option>
 					</select> <br>
-					<input type="text" placeholder="message"> <br>
-					<button onclick="submitButton()" type="submit">Submit</button>
+					<input type="text" placeholder="message" name="message"> <br>
+					<button onclick="submitButton()" type="submit" value="submit">Submit</button>
 				</fieldset>
 			</form>
 			<a href="https://www.instagram.com/littlebrownzofficial/" target="_blank"><img src="iggreylogo.png" class="socialicon ig"></a>
@@ -66,7 +66,7 @@
 		<div id="tips">
 			<h1 class="questionicon">?</h1>
 			<h2 class="tipstitle">Need Tips</h2>
-			<a href="gallery.html"><img src="arrowicon.svg" class="arrow"></a>
+			<a href="tips.html"><img src="arrowicon.svg" class="arrow"></a>
 		</div>
 	</body>
 </html>
