@@ -150,6 +150,9 @@ body {
 	top: 300%;
 	left: 20%;
 }
+#contact form {
+	width: 90%;
+}
 #contact form fieldset {
 	border: none;
 }
@@ -167,7 +170,8 @@ body {
 	font-family: 'Darker Grotesque', sans-serif;
 	font-size: 3.2em;
 	padding-right: 2.5em;
-	
+	width: 90%;
+
 }
 #contact form fieldset input, #contact form fieldset select, #contact form fieldset button{
 	margin: 5%;
@@ -311,10 +315,9 @@ body {
 }
 .accordion {
 	width: 50%;
-	margin: 0 auto;
-	position: absolute;
-	top: 20%;
+	position: relative;
 	left: 30%;
+	top: 5em;
 }
 .accordionheader {
 	border: 1px solid white;
@@ -341,9 +344,9 @@ body {
 	color: white;
 }
 .blogblockwrapper {
-	position: absolute;
-	top: 80%;
-	left: 3%;
+	position: relative;
+	top: 10em;
+	left: 0;
 	right: 3%;
 	display: flex;
 	margin-bottom: 3%;
@@ -422,7 +425,7 @@ body {
 	.tipsheading {
 	right: 0.25%;
 }
-	
+
 }
 @media only screen and (max-width: 1000px){
 	#iconopen {
@@ -452,7 +455,7 @@ body {
 		top: 25%;
 	}
 	#gallery {
-		top: 105%;
+		top: 150%;
 		margin-left: -8%;
 	}
 	#gallery1 {
@@ -475,16 +478,16 @@ body {
 	font-size: 7em;
 	}
 	#contact {
-		top: 200%;
+		top: 290%;
 	}
 	#tips {
-		top: 350%;
+		top: 480%;
 		left: 30%;
 	}
 	#contact form fieldset input {
 	font-size: 3.2em;
 	padding-right: 0em;
-	
+
 	}
 	#contact form fieldset button {
 		margin-left: 45%;
@@ -516,39 +519,61 @@ body {
 	.closeicon {
 		width: 6%;
 	}
+	.accordion {
+		top: 18em;
+	}
+	.blogblockwrapper {
+		top: 20em;
+		left: 0;
+	}
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 770px) {
 	.aboutheading {
-		top: 30%;
-		right: 48%;
-		z-index: 1;
-		font-weight: bold;
-		font-size: 5em;
-		line-height: 2em;
+		top: 65%;
+		right: 78%;
 	}
 	.aboutbio {
-		position: absolute;
-		z-index: 1;
-		top: 65%;
-		right: 40%;
-		font-size: 1.3em;
-		max-width: 28%;
+		top: 122%;
+		right: 20%;
+		max-width: 60%;
 	}
 	.aboutpicture {
+		right: 20%;
+		top: 50%;
 		width: 60%;
-		position: absolute;
-		z-index: -1;
-		right: 10%;
-		top: 20%;
-
 	}
 	.backlogo {
-		position: absolute;
-		top: 0;
+		top: 45%;
 		right: 0;
-		z-index: -2;
-		width: 60%;
+		width: 70%;
 	}
+	#gallery {
+		top: 190%;
+	}
+	#contact {
+		top: 300%;
+		left: 0;
+	}
+	#tips {
+		top: 490%;
+	}
+	.email {
+		font-size: 1.8em;
+	}
+	#contact form fieldset button {
+		margin-left: 42%;
+	}
+	.socialicon.ig {
+		left: 20%;
+	}
+	.socialicon.fb {
+		left: 48%;
+	}
+	.socialicon.tw {
+		left: 78%;
+	}
+}
+@media only screen and (max-width: 550px) {
 	.tipsheading {
 		top: 20%;
 		left: 13%;
@@ -558,5 +583,40 @@ body {
 	}
 	.blogblockwrapper {
 		top: 100%;
+	}
+	.aboutheading {
+		right: 73%;
+	}
+	.aboutbio {
+		top: 100%;
+	}
+	.accordion {
+		top: 23em;
+	}
+	.blogblockwrapper {
+		top: 25em;
+		left: 0;
+	}
+	.tipsheading {
+		top: 23%;
+	}
+}
+@media only screen and (max-width: 380px){
+	.aboutheading {
+		display: none;
+	}
+	.aboutpicture {
+		right: 15%;
+		width: 80%;
+	}
+	.aboutbio {
+		top: 90%;
+		right: 5%;
+		max-width: 90%;
+	}
+}
+@media only screen and (max-height: 600px) {
+	.sidenav {
+		top: 90%;
 	}
 }
