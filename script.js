@@ -1,3 +1,7 @@
+//scroll to reveal sections
+ScrollReveal({ reset: true });
+ScrollReveal({ duration: 1200 });
+
 //adding fixed style to menu so that it can appear to fill the page
 function menuButton() {
   var x = document.getElementById("fullpagenav");
