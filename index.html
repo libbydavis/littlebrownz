@@ -2,11 +2,12 @@
 <html lang="en">
 	<head>
 	<title>LittleBrownz</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque%7CMontserrat&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/kylelogofav-03.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://unpkg.com/scrollreveal@4"></script>
-	<script src="script.js"></script>
+	<script src="scripts/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -27,22 +28,31 @@
 					<li class="tipsbutton hovermenu">Tips</li>
 				</ul>
 			</nav>
-			<a href="#about"><img src="kylelogoweb.png" id="logo"></a>
-			<img src="openiconkyle.svg" id="iconopen" onclick="menuButton()">
-			<img src="closeiconkyle.svg" id="iconclose" onclick="menuButton()">
+			<a href="#about"><img src="images/kylelogoweb.png" id="logo"></a>
+			<img src="images/openiconkyle.svg" id="iconopen" onclick="menuButton()">
+			<img src="images/closeiconkyle.svg" id="iconclose" onclick="menuButton()">
 		</div>
 		<div id="about">
 			<h2 class="aboutheading">Hello!</h2>
 			<p class="aboutbio">I am a young man who enjoys taking pictures of things that inspires me. I do photography as a hobby and hopefully in the future be my full-time job. <br>
-			I was born in the Philippines but currently living here in New Zealand. Things I love to do are playing sports, singing, and just being outdoors with my camera.</p>
-			<img src="kylebw.jpg" class="aboutpicture">
-			<img src="kygraphic.png" class="backlogo">
+			I was born in the Philippines but currently living here in New Zealand. Things I love to do are playing sports, singing, and just being outdoors with my camera.
+		</p>
+		<ul class="aboutservices">
+			<li class="servicetitle">Services:</li>
+			<li>Book Photography</li>
+			<li>Purchase Photos</li>
+			<li>Photography Advice</li>
+		</ul>
+			<img src="images/kylebw.jpg" class="aboutpicture">
+			<img src="images/kygraphic.png" class="backlogo">
 		</div>
+
 		<div id="gallery">
 			<a href="gallery.html"><h2 class="gallerytitle">Gallery</h2></a>
-			<img id="gallery1" src="nic2.jpg">
-			<img id="gallery2" src="nic1.jpg">
-			<img id="gallery3" src="nic3.jpg">
+			<a href="gallery.html"><img src="images/arrowicon.svg" class="galleryarrow"></a>
+			<a href="gallery.html"><img id="gallery1" src="images/nic2.jpg"></a>
+			<a href="gallery.html"><img id="gallery2" src="images/nic1.jpg"></a>
+			<a href="gallery.html"><img id="gallery3" src="images/nic3.jpg"></a>
 		</div>
 		<div id="contact">
 			<form method="post" action="get.php">
@@ -58,15 +68,15 @@
 					<button onclick="submitButton()" type="submit" value="submit">Submit</button>
 				</fieldset>
 			</form>
-			<a href="https://www.instagram.com/littlebrownzofficial/" target="_blank"><img src="iggreylogo.png" class="socialicon ig"></a>
-			<a href="https://www.facebook.com/kfyu1018" target="_blank"><img src="facebookgreylogo.png" class="socialicon fb"></a>
-			<a href="https://twitter.com/" target="_blank"><img src="twittergreylogo.png" class="socialicon tw"></a>
+			<a href="https://www.instagram.com/littlebrownzofficial/" target="_blank"><img src="images/iggreylogo.png" class="socialicon ig"></a>
+			<a href="https://www.facebook.com/kfyu1018" target="_blank"><img src="images/facebookgreylogo.png" class="socialicon fb"></a>
+			<a href="https://twitter.com/" target="_blank"><img src="images/twittergreylogo.png" class="socialicon tw"></a>
 			<a href="mailto:131666@cloud.rangitoto.school.nz?Subject=Inquiry" class="maillink"><h3 class="email">131666@cloud.rangitoto.school.nz</h3></a>
 		</div>
 		<div id="tips">
 			<h1 class="questionicon">?</h1>
-			<h2 class="tipstitle">Need Tips</h2>
-			<a href="tips.html"><img src="arrowicon.svg" class="arrow"></a>
+			<a href="tips.html"><h2 class="tipstitle">Need Tips</h2></a>
+			<a href="tips.html"><img src="images/arrowicon.svg" class="arrow"></a>
 		</div>
 		<script>
 		ScrollReveal().reveal('#gallery');
