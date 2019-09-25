@@ -47,7 +47,7 @@ $(document).ready(function(){
 			scrollTop: $("#gallery").offset().top
 		}, 1000);
 	});
-	$(".contactbutton").add(".aboutservices").on('click', function(){
+	$(".contactbutton").add(".contactmebutton").on('click', function(){
 		$("html, body").animate({
 			scrollTop: $("#contact").offset().top
 		}, 1000);
