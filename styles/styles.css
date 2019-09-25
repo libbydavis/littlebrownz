@@ -109,11 +109,8 @@ body {
 .aboutservices {
 	list-style: none;
 	position: absolute;
-	top: 92%;
+	top: 95%;
 	left: 30%;
-}
-.aboutservices:hover {
-	cursor: pointer;
 }
 .aboutservices li {
 	font-size: 1.6em;
@@ -121,7 +118,17 @@ body {
 .aboutservices li:first-child {
 	font-size: 2em;
 }
-
+.contactmebutton {
+	border: solid white;
+	background-color: transparent;
+	color: white;
+	padding: 0.5em;
+	font-size: 1em;
+	margin-top: 0.5em;
+}
+.contactmebutton:hover {
+	cursor: pointer;
+}
 
 /* Gallery Section */
 #gallery {
@@ -152,9 +159,10 @@ body {
 .gallerytitle {
 	position: absolute;
 	top: 60%;
-	left: 10%;
+	left: 40%;
 	font-size: 7em;
 	z-index: 3;
+	width: 40vw;
 }
 #gallery a {
 	color: white;
@@ -244,7 +252,6 @@ body {
 	top: 460%;
 	text-align: center;
 	left: 35%;
-
 }
 #tips a {
 	color: white;
@@ -483,7 +490,7 @@ body {
 		top: 112%;
 	}
 	.aboutservices {
-	top: 98%;
+	top: 106%;
 	left: 28.5%;
 	}
 	.email {
@@ -545,7 +552,7 @@ body {
 	}
 	#tips {
 		top: 480%;
-		left: 30%;
+		left: 24%;
 	}
 	#contact form fieldset input {
 	font-size: 3.2em;
@@ -595,7 +602,7 @@ body {
 		top: 80%;
 	}
 	.aboutservices {
-		top: 84%;
+		top: 92%;
 		left: 18%;
 	}
 }
@@ -622,15 +629,21 @@ body {
 	#gallery {
 		top: 190%;
 	}
+	.gallerytitle {
+		width: 50vw;
+		left: 48%;
+	}
 	#contact {
 		top: 300%;
 		left: 0;
 	}
 	#tips {
-		top: 490%;
+		top: 480%;
+		overflow: hidden;
 	}
 	.email {
 		font-size: 1.7em;
+		margin-left: 21%;
 	}
 
 	#contact form fieldset button {
@@ -684,8 +697,11 @@ body {
 		width: 85%;
 	}
 	.aboutservices {
-		top: 111%;
+		top: 118%;
 		left: 13%;
+	}
+	#iconopen, #iconclose {
+		width: 14%;
 	}
 }
 @media only screen and (max-width: 550px) {
@@ -698,12 +714,6 @@ body {
 	}
 	.blogblockwrapper {
 		top: 100%;
-	}
-	.aboutheading {
-		right: 73%;
-	}
-	.aboutbio {
-		top: 85%;
 	}
 	.accordion {
 		top: 23em;
@@ -721,9 +731,10 @@ body {
 	top: 75%;
 	}
 	.gallerytitle {
-	top: 55%;
-	left: 3%;
+	width: 60vw;
+	left: 34%;
 	}
+
 	#contact {
 	left: 0;
 	}
@@ -737,9 +748,35 @@ body {
 		margin-top: 10%;
 		width: 85%;
 	}
+	#logo {
+	width: 9em;
+	}
+	.aboutpicture {
+		top: 36%;
+	}
+	.aboutbio {
+		top: 73%;
+	}
+	.backlogo {
+		top: 32%;
+	}
+	.aboutheading {
+		right: 73%;
+		top: 48%;
+	}
 	.aboutservices {
-		top: 125%;
+		top: 120%;
 		left: 10%;
+	}
+	.email {
+		margin-left: 12%;
+	}
+	#contact form fieldset button {
+	margin-left: 35%;
+	}
+	#tips {
+		left: 8%;
+		line-height: 7em;
 	}
 
 }
@@ -750,16 +787,38 @@ body {
 	.aboutpicture {
 		right: 15%;
 		width: 80%;
+		top: 40%;
 	}
 	.aboutbio {
-		top: 85%;
+		top: 72%;
 		right: 5%;
 		max-width: 90%;
 	}
-	.gallerytitle {
-	top: 55%;
-	left: -15%;
+	.aboutservices {
+		top: 115%;
+		left: -5%;
 	}
+	.backlogo {
+		top: 35%;
+	}
+	.gallerytitle {
+	left: 18%;
+	}
+	
+	.gallerypagetitle {
+	top: -10%;
+	}
+	.email {
+		margin-left: 8%;
+	}
+	#contact form fieldset button {
+		margin-left: 33%;
+	}
+	#tips {
+		left: 8%;
+		line-height: 7em;
+	}
+
 }
 @media only screen and (max-height: 600px) {
 	.sidenav {
